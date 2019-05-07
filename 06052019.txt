@@ -1,0 +1,47 @@
+Factorial
+-----------
+#include <stdio.h>
+void main()
+{
+int fact=1;
+int i,n;
+printf("Enter a number");
+scanf("%d", &n);
+
+do{
+    fact=fact*n;
+    n--;
+}while(n>=1);
+printf("The factorial is %d", fact);
+}
+
+-------------------
+functions:
+#include <stdio.h>
+main()
+{
+    int x=1, y=2,z;
+    z=add(x,y);
+    printf("%d", z);
+}
+add(a,b)
+{
+    return(a+b);
+}
+-----------
+Declaring array and printing:
+#include <stdio.h>
+
+
+void main()
+
+{
+    int marks[4]={100,99,55,88};
+     
+    for(int i=0;i<4;i++)
+    {
+    printf("\n %d", marks[i]);
+    }
+    
+   
+}

@@ -1,0 +1,121 @@
+#include<stdio.h>
+void main()
+{
+    int a,b, result, choice;
+    printf("Enter 2 numbers \n");
+    scanf("%d%d", &a,&b);
+    printf("Menu");
+    printf("\n 1. Addition");
+    printf("\n 2. Sub");
+    printf("\n 3. Product");
+    printf("\n 4. Division");
+    printf("\n 5. Larger than two");
+    printf("\n 6. Exit");
+    printf("\n Enter choice");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+        result=a+b;
+        printf("add %d", result);
+        break;
+        case 2:
+        result=a-b;
+        printf("sub %d", result);
+        break;
+        case 3:
+        result=a*b;
+        printf("product %d", result);
+        break;
+        case 4:
+        result=a/b;
+        printf("quotient %d", result);
+        break;
+        case 5:
+        if(a>b)
+        printf("num1 is biggest");
+        else
+        printf("num2 is biggest");
+        break;
+        case 6:
+        printf("Thanks for using the menus");
+        //exit ();
+        break;
+        default:
+        printf("\n Invalid choice");
+        printf("\n Enter choice");
+        scanf("%d", &choice);
+        break;
+        
+    }
+    
+    
+    
+}
+
+
+
+------------
+increment / decrement
+#include<stdio.h>
+void main()
+{
+    int a=10;
+    printf("%d", a);
+    printf("\n %d", ++a);
+    printf("\n %d", a);
+    printf("\n %d", a++);
+    printf("\n %d", a);
+}
+
+---------------
+Converting years to month/min/hour...
+------
+Armstron number:
+#include <stdio.h>
+#include<math.h>
+void main()
+{
+    int number,x;
+    int reminder=0,cube=0,sum=0;
+    printf("Enter a number");
+    scanf("%d", &number);
+    x=number;
+    while(number!=0)
+    {
+        printf("now the number %d", number);
+        reminder=number%10;
+        printf("\n check with reminder %d", reminder);
+        
+cube=pow(reminder, 3);
+       
+ printf("the cube is %d", cube);
+        sum=sum+cube;
+        printf("\n check with sum %d", sum);
+        number=number/10;
+        printf("\n check with number %d ", number);
+        
+    }
+    if(sum==x)
+    
+    printf("\n Yes it is an Armstrong number");
+    else
+    printf("Not an armstrong number");
+}
+
+153=15
+153/10 = 3
+15/10 = 5
+1
+
+
+display numbers as
+1
+4
+9
+16
+25
+
+
+
+
